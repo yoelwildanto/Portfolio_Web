@@ -319,20 +319,28 @@ header.sticky .nav-bar{
 
 
 /* mobile devices */
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 480px) {
  .container{
-    max-width: 475px;
+    max-width: 480px;
  }
  .nav-bar .logo{
     font-size: 1.8em;
  }
 
- .animated-text{
-    position: relative;
-    height: 55px;
-    overflow: hidden;
+ .nav-items a{
+    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    display: none;
+ }
+   
+
+ .home-container .info h2{
+    font-size: 2.1em;
+    font-weight: 600;
+    line-height: 70px;
 }
 
+ 
 .animated-text h3{
     color: var(--third-color);
     font-size: 1.3em;
@@ -342,25 +350,14 @@ header.sticky .nav-bar{
     
 }
 
-.animated-text h3:nth-child(1){
-    animation: text-move 12s infinite;
+
+
 }
 
-@keyframes text-move {
-    0%{
-        margin-top: 0;
+@media screen and (max-width: 786px) {
+    .home-container .info h2{
+        font-size: 2.1em;
+        font-weight: 600;
+        line-height: 70px;
     }
-    25%{
-        margin-top: -50px;
-    }
-    50%{
-        margin-top: -100px;
-    }
-    75%{
-        margin-top: -50px;
-    }
-    100%{
-        margin-top: 0px;
-    }
-}
 }
