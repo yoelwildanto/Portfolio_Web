@@ -507,7 +507,7 @@ img{
 }
 
 .nav-menu-btn{
-    background: url(./asset/option.png) no-repeat;
+    background: url(./asset/menu2.png) no-repeat;
     filter: black;
     background-size: 30px;
     background-position: center;
@@ -541,9 +541,9 @@ img{
 
 .nav-close-btn{
     position: absolute;
-    background: url(./asset/close.png)no-repeat;
+    background: url(./asset/close2.png)no-repeat;
     filter: black;
-    background-size: 12px;
+    background-size: 22px;
     background-position: center;
     width: 40px;
     height: 40px;
