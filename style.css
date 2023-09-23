@@ -421,6 +421,10 @@ input[type="checkbox"]{
         margin-bottom: 80px;
     }
 
+    .bars{
+        padding: 0px 5em;
+    }
+
 
     .bar{
         background: var(--card-bg-color);
@@ -830,6 +834,10 @@ img{
 .about-info .professional-list .list-item span{
     color: var(--third-color);
     font-weight: var(--small-font-size);
+}
+
+.bars{
+    padding: 0px .6em;
 }
 
 
