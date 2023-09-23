@@ -384,6 +384,12 @@ input[type="checkbox"]{
 .nav-btn{
     display: none;
 }
+.img-480{
+    position:relative;
+    width: 37%;
+    display: none;
+    
+}
 
 
 /* mobile devices */
@@ -432,6 +438,7 @@ input[type="checkbox"]{
     margin-left: 0px;
     margin-right: 0px;
     padding: 0rem .5rem 2rem;
+    height: 100vh;
 }
  /* .nav-bar .logo{
     font-size: 1.8em;
@@ -606,6 +613,14 @@ img{
     /* height: 300px; */
     /* transform: translate(0,0); */
     /* display: none; */
+}
+
+.img-480{
+    position:relative;
+    width: 30%;
+    display: block;
+    margin: 0px 30vw;
+    
 }
 
 .btn{
