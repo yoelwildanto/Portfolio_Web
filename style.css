@@ -411,7 +411,7 @@ input[type="checkbox"]{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 480px;
+    /* width: 480px; */
 }
  .home-container .media-icons{
     display: flex;
@@ -619,7 +619,8 @@ img{
     padding: 20px 30px;
     letter-spacing: 1px;
     border-radius: 10px;
-    margin-left: 150px;
+    transform: translateX(35px);
+    /* margin-left: 150px; */
 }
 
 
