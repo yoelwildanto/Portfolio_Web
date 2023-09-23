@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="absolute.css"> <!-- Include your CSS file -->
+    <title>Responsive Menu</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+        </ul>
+    </nav>
+    <img src="./asset/option.png" alt="Menu" class="menu-button" id="menu-button">
+
+    <script>
+        var menuButton = document.getElementById('menu-button');
+        var menu = document.querySelector('.menu');
+
+        // Toggle menu visibility when the menu button is clicked
+        menuButton.addEventListener('click', function() {
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none'; // Hide the menu
+            } else {
+                menu.style.display = 'block'; // Show the menu
+            }
+        });
+    </script>
+</body>
+</html>
+

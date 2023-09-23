@@ -124,6 +124,13 @@ header.sticky .nav-bar{
     color: var(--second-color);
 }
 
+input[type="checkbox"]{
+    display: none;
+}
+.burger-btn{
+    display: none;
+}
+
 .home{
     position: relative;
     max-width: 1250px;
@@ -375,6 +382,10 @@ header.sticky .nav-bar{
     font-weight: var(--small-font-size);
 }
 
+.nav-btn{
+    display: none;
+}
+
 
 /* mobile devices */
 @media screen and (max-width: 480px) {
@@ -423,16 +434,138 @@ header.sticky .nav-bar{
     margin-right: 0px;
     padding: 0rem .5rem 2rem;
 }
- .nav-bar .logo{
+ /* .nav-bar .logo{
     font-size: 1.8em;
  }
+
+ .nav-items {
+    display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1;
+        border: 1px solid white;
+        padding-left: 10px;
+        cursor: pointer;
+         }
 
  .nav-items a{
     color: var(--first-color);
     font-size: var(--normal-font-size);
+    /* display: none; */
+ /* }
+
+ .burger-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    display: flex;
+    width: 10%;
+}
+input[type="checkbox"]{
+    display: flex;
+}
+img{
+    cursor: pointer;
+}
+
+
+#toggle-checkbox, #toggle-label {
     display: none;
- }
+}
+
+#toggle-checkbox:checked ~ .nav-bar .nav-items {
+    display: flex;
+} */ 
+
+.navigation{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--transparent-color-01) ;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.navigation.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.navigation.active .nav-items{
+ transform: translateY(0);
+}
+
+.nav-menu-btn{
+    background: url(./asset/option.png) no-repeat;
+    filter: black;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: block;
+}
+
+
+.nav-items{
+    position: relative;
+    background: var(--modal-bg-color);
+    /* width atur lagi */
+    width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transform: translateY(-50px);
+    transition: .3s ease;
+
+}
+
+.nav-items a{
+    margin: 15px 50px;
+}
+
+.nav-close-btn{
+    position: absolute;
+    background: url(./asset/close.png)no-repeat;
+    filter: black;
+    background-size: 12px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    cursor: pointer;
+}
+
    
+ .home-container .media-icons{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    display: none;
+}
+
+.home-container .media-icons a{
+    color: var(--second-color);
+    font-size: 1.5em;
+    margin: 10px 0;
+}
  .home-container .info{
     width: 900px;
     margin-top: 70px;
@@ -442,6 +575,7 @@ header.sticky .nav-bar{
     font-size: 1.4em;
     font-weight: 600;
     line-height: 70px;
+    text-align: center;
 }
 
  
@@ -451,19 +585,21 @@ header.sticky .nav-bar{
     font-weight: 700;
     line-height: 80px;
     letter-spacing: 1px;
-    
+    text-align: center;
 }
 
 .home-container .info p{
     color: var(--third-color);
     font-size: var(--normal-font-size);
     max-width: 6000px;
+    text-align: center;
 }
 .home-container .home-img{
     position: relative;
     top: 340px;
     right: 222px;
     width: 100%;
+    display: none;
 }
 
 .home-container .home-img img{
@@ -471,6 +607,19 @@ header.sticky .nav-bar{
     /* height: 300px; */
     /* transform: translate(0,0); */
     /* display: none; */
+}
+
+.btn{
+    background: var(--second-color);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 30px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    margin-left: 150px;
 }
 
 
