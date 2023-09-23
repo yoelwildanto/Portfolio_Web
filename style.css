@@ -271,7 +271,7 @@ input[type="checkbox"]{
 
 .flex-center{
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 }
 
@@ -388,9 +388,9 @@ input[type="checkbox"]{
 
 /* mobile devices */
 @media screen and (max-width: 480px) {
- .container{
+ /* .container{
     max-width: 480px;
- }
+ } */
  /* .flex-center{
     display: flex;
     justify-content: center;
@@ -403,7 +403,7 @@ input[type="checkbox"]{
     min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    padding: 0rem 2rem 0rem 1rem;
+    padding: 0rem 1rem 0rem 1rem;
     flex-direction: column;
 }
 .home .home-container{
@@ -659,6 +659,7 @@ img{
 
 .container{
     position: relative;
+    padding: 0rem 1.5rem;
     flex-direction: column;
     /* border: 1px solid red; */
 }
@@ -704,6 +705,7 @@ img{
     margin-bottom: 15px;
     padding-bottom: 25px;
     border-bottom: 2px solid var(--line-color);
+    width: 95%;
 }
 
 .about-info .professional-list{
