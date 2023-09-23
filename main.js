@@ -32,5 +32,7 @@ closeBtn.addEventListener("click", () => {
 });
 
 navItems.forEach((navItem) =>{
-    navItem.addEventListener.remove("active")
-})
+    navItem.addEventListener("click", () =>{
+        navigation.classList.remove("active");
+    })
+});
