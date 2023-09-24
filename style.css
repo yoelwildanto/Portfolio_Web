@@ -394,6 +394,7 @@ input[type="checkbox"]{
 
 .skills .container .content{
     width: 100%;
+    height: 100vh;
     }
 
 .skills-info{
@@ -823,7 +824,7 @@ img{
 
 .about-info .professional-list{
     display: flex;
-    column-gap: 30px;
+    column-gap: 20px;
 }
 
 .about-info .professional-list .list-item h3{
@@ -839,6 +840,10 @@ img{
 .bars{
     padding: 0px .6em;
 }
+.skills .container .content{
+    width: 100%;
+    height: 100vh;
+    }
 
 
 
