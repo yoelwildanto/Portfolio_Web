@@ -504,7 +504,7 @@ input[type="checkbox"]{
  .home{
     position: relative;
     max-width: 480px;
-    min-height: 100vh;
+    max-height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding: 0rem 1rem 0rem 1rem;
@@ -672,7 +672,7 @@ img{
 }
  .home-container .info{
     width: 900px;
-    margin-top: 70px;
+    /* margin-top: 70px; */
  }
 
  .home-container .info h2{
